@@ -1,13 +1,145 @@
-body {
+@import url('https://font.googleapis.com/css2?family:Poppins: wght@400;600;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #202142;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+.card {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  color: #202142;
+  border-radius: 5px;
+  position: relative;
+  padding: 25px 40px;
+  margin-top: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.num-display {
+  position: absolute;
+  top: -15px;
+  left: -8px;
+  background-color: #ff6a95;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.feedback-loading {
+  background-color: red;
+  z-index: 2;
+}
+.carding {
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  padding: 25px 40px;
+  margin-top: 30px;
+  font-weight: 400;
+  text-align: left;
+  background-color: black;
+  color: #fff;
+}
+
+.feedback-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input-group button {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+
+.btn {
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #202142;
+}
+
+.btn-secondary {
+  background-color: #ff6a95;
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.rating li {
+  width: 20%;
+  list-style: none;
+}
+
+.about-link {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.about-link a {
+  color: white;
+  display: inline-block;
+  background-color: #ff6a95;
+  padding: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.edit {
+  position: absolute;
+  top: 10;
+  right: 15px;
+}
+.delete {
+  position: absolute;
+  top: 10;
+  right: 45px;
 }
